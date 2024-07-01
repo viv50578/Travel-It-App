@@ -40,7 +40,7 @@ class _upiState extends State<upi> {
             backgroundColor: Colors.transparent,
             title: Center(
                 child: Text(
-              ' Payment Gateway',
+              'UPI',
               style: GoogleFonts.montserrat(
                   fontSize: 24, fontWeight: FontWeight.w500, color: Colors.white),
             )),

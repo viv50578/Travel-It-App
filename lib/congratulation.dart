@@ -54,24 +54,33 @@ class _congratulationState extends State<congratulation> {
             clipBehavior: Clip.none,
             children: [
               Positioned(
-                  left: 90,
-                  top: 50,
-                  right: 60,
+                left: 60,
+                right: 60,
+                top: 60,
+                child: Center(
                   child: Text(
-                    'Congratulations!  Your Ticket has been booked',
+                    'Congratulations! Your Ticket has been booked',
+                    textAlign: TextAlign.center,
                     style: GoogleFonts.montserrat(
-                        color: Colors.white,
-                        fontSize: 24,
-                        fontWeight: FontWeight.w500),
-                  )),
-              const Positioned(
-                  top: 180,
-                  right: 180,
+                      color: Colors.white,
+                      fontSize: 24,
+                      fontWeight: FontWeight.w500,
+                    ),
+                  ),
+                ),
+              ),
+              Positioned(
+                top: 180,
+                left: 0,
+                right: 0,
+                child: Center(
                   child: Icon(
                     Icons.celebration_rounded,
                     size: 60,
                     color: Color.fromARGB(229, 255, 255, 255),
-                  )),
+                  ),
+                ),
+              ),
               // Positioned(
               //     bottom: 350,
               //     child: Container(

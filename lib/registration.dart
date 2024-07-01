@@ -488,13 +488,12 @@ class _RegistrationState extends State<Registration> {
                       padding: const EdgeInsets.only(top: 50),
                       child: Text(
                         'Registration',
-                        style: TextStyle(
-                          letterSpacing: 1,
-                          wordSpacing: 5,
-                          fontSize: 30,
-                          fontWeight: FontWeight.w400,
-                          color: const Color(0xffFFFFFF),
-                        ),
+                        style: GoogleFonts.montserrat(
+                            letterSpacing: 1,
+                            wordSpacing: 5,
+                            fontSize: 30,
+                            fontWeight: FontWeight.w500,
+                            color: const Color(0xffFFFFFF)),
                         // style: GoogleFonts.montserrat(
                         //   letterSpacing: 1,
                         //   wordSpacing: 5,
