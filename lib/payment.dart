@@ -177,7 +177,7 @@ class _PaymentState extends State<Payment> {
                             Text(
                               'UPI',
                               style: GoogleFonts.montserrat(
-                                fontWeight: FontWeight.w400,
+                                fontWeight: FontWeight.w500,
                                 fontSize: 28,
                                 color: const Color(0xffFFFFFF),
                               ),
