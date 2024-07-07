@@ -10,7 +10,7 @@
 - **Class Selection:** Users can choose the class they want to travel in, be it economy, business, or first class.
 - **Multiple Payment Options:** Convenient payment options including card and UPI payments.
 
-## images
+## Images
 
 ### Login Page
 ![Login Page](/images/1.jpg)
