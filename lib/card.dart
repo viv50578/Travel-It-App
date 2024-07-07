@@ -1,4 +1,4 @@
-import 'package:travel/congratulation.dart';
+import 'package:travel/confirmation.dart';
 import 'package:intl/intl.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -37,8 +37,8 @@ class _netbankingState extends State<netbanking> {
       decoration: const BoxDecoration(
         gradient: LinearGradient(
           colors: [
-            Color(0xff22556B),
-            Color(0xff35728A),
+            Color(0xff06283D),
+            Color(0xff256D85),
           ],
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,

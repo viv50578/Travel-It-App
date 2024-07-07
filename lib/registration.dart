@@ -570,9 +570,16 @@ class _RegistrationState extends State<Registration> {
                     Container(
                       padding: const EdgeInsets.only(top: 36),
                       child: ConstrainedBox(
-                        constraints: const BoxConstraints.tightFor(
-                            height: 42, width: 127),
+                        constraints: const BoxConstraints.tightFor(height: 55, width: 127),
                         child: ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                            padding: EdgeInsets.zero, // Remove padding from the button
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(25),
+                            ),
+                            elevation: 0,
+                            shadowColor: Colors.transparent, // Set this to transparent
+                          ),
                           onPressed: () {
                             Navigator.push(
                               context,
@@ -581,20 +588,24 @@ class _RegistrationState extends State<Registration> {
                               ),
                             );
                           },
-                          style: ElevatedButton.styleFrom(
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(15),
+                          child: Ink(
+                            decoration: BoxDecoration(
+                              gradient: const LinearGradient(
+                                colors: [Color(0xff66B8D9), Color(0xff4E95AF)],
+                              ),
+                              borderRadius: BorderRadius.circular(25),
                             ),
-                            backgroundColor: const Color(0xff1B7084),
-                            shadowColor: const Color(0xff1B7084),
-                            elevation: 3,
-                          ),
-                          child: Text(
-                            'Register',
-                            style: TextStyle(
-                              fontSize: 20,
-                              fontWeight: FontWeight.w400,
-                              color: Colors.white,
+                            child: Container(
+                              alignment: Alignment.center,
+                              constraints: const BoxConstraints.tightFor(height: 55, width: 127), // Ensure container fills the button
+                              child: Text(
+                                'Register',
+                                style: GoogleFonts.montserrat(
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.w400,
+                                  color: Colors.white,
+                                ),
+                              ),
                             ),
                           ),
                         ),

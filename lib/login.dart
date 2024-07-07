@@ -148,32 +148,49 @@ class _LoginState extends State<Login> {
                     ),
                   ),
                   Container(
-                      padding: const EdgeInsets.only(top: 36),
-                      child: ConstrainedBox(
-                        constraints:
-                            const BoxConstraints.tightFor(height: 42, width: 127),
-                        child: ElevatedButton(
-                          // onPressed: signIn,
-                          style: ElevatedButton.styleFrom(
-                              shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(15)), backgroundColor: const Color(0xff1B7084),
-                              shadowColor: const Color(0xff1B7084),
-                              elevation: 3),
-                          onPressed: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) => first(),
+                    padding: const EdgeInsets.only(top: 36),
+                    child: ConstrainedBox(
+                      constraints: const BoxConstraints.tightFor(height: 55, width: 127),
+                      child: ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          padding: EdgeInsets.zero, // Remove padding from the button
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(25),
+                          ),
+                          elevation: 0,
+                          shadowColor: Colors.transparent, // Set this to transparent
+                        ),
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => first(),
+                            ),
+                          );
+                        },
+                        child: Ink(
+                          decoration: BoxDecoration(
+                            gradient: const LinearGradient(
+                              colors: [Color(0xff66B8D9), Color(0xff4E95AF)],
+                            ),
+                            borderRadius: BorderRadius.circular(25),
+                          ),
+                          child: Container(
+                            alignment: Alignment.center,
+                            constraints: const BoxConstraints.tightFor(height: 55, width: 127), // Ensure container fills the button
+                            child: Text(
+                              'Login',
+                              style: GoogleFonts.montserrat(
+                                fontSize: 20,
+                                fontWeight: FontWeight.w400,
+                                color: Colors.white,
                               ),
-                            );
-                          },
-                          child: Text(
-                            'Login',
-                            style: GoogleFonts.montserrat(
-                                fontSize: 20, fontWeight: FontWeight.w400, color: Colors.white),
+                            ),
                           ),
                         ),
-                      )),
+                      ),
+                    ),
+                  ),
                   Container(
                     padding: const EdgeInsets.only(top: 30, left: 15),
                     child: RichText(

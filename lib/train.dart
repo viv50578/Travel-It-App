@@ -451,8 +451,8 @@ class _trainState extends State<train> {
       decoration: const BoxDecoration(
           gradient: LinearGradient(
             colors: [
-              Color(0xff22556B),
-              Color(0xff35728A),
+              Color(0xff06283D),
+              Color(0xff256D85),
             ],
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
@@ -705,7 +705,7 @@ class _trainState extends State<train> {
                     border: Border.all(
                         width: 1,
                         color: const Color.fromARGB(0, 239, 239, 239)),
-                    borderRadius: const BorderRadius.all(Radius.circular(50)),
+                    borderRadius: const BorderRadius.all(Radius.circular(25)),
                     gradient: const LinearGradient(
                         colors: [Color(0xff66B8D9), Color(0xff4E95AF)]),
                   ),

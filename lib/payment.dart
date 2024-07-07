@@ -17,8 +17,8 @@ class _PaymentState extends State<Payment> {
       decoration: const BoxDecoration(
         gradient: LinearGradient(
           colors: [
-            Color(0xff22556B),
-            Color(0xff35728A),
+            Color(0xff06283D),
+            Color(0xff256D85),
           ],
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,

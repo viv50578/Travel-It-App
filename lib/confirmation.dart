@@ -17,8 +17,8 @@ class _congratulationState extends State<congratulation> {
       decoration: const BoxDecoration(
           gradient: LinearGradient(
         colors: [
-          Color(0xff22556B),
-          Color(0xff35728A),
+          Color(0xff06283D),
+          Color(0xff256D85),
         ],
         begin: Alignment.topCenter,
         end: Alignment.bottomCenter,
@@ -104,60 +104,95 @@ class _congratulationState extends State<congratulation> {
               //             )),
               //       ),
               //     )),
-              Positioned(
-                  bottom: 330,
-                  child: Container(
-                    padding: const EdgeInsets.only(left: 20),
-                    child: SizedBox(
-                      width: 350,
-                      height: 52,
-                      child: ElevatedButton(
+              Center(
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: 20),
+                      child: SizedBox(
+                        width: 250,
+                        height: 52,
+                        child: ElevatedButton(
                           onPressed: () {
                             Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => const first(),
-                                ));
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => const first(),
+                              ),
+                            );
                           },
                           style: ElevatedButton.styleFrom(
-                              backgroundColor: const Color.fromARGB(55, 0, 0, 0),
-                              shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(16))),
-                          child: Text(
-                            'Explore',
-                            style: GoogleFonts.montserrat(
-                                fontSize: 20,
-                                letterSpacing: 0,
-                                fontWeight: FontWeight.w500,
-                                color: const Color.fromARGB(255, 255, 255, 255)),
-                          )),
+                            padding: EdgeInsets.zero,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(16),
+                            ),
+                            elevation: 0,
+                            shadowColor: Colors.transparent,
+                          ),
+                          child: Ink(
+                            decoration: BoxDecoration(
+                              gradient: const LinearGradient(
+                                colors: [Color(0xff66B8D9), Color(0xff4E95AF)],
+                              ),
+                              borderRadius: BorderRadius.circular(16),
+                            ),
+                            child: Container(
+                              alignment: Alignment.center,
+                              child: Text(
+                                'Explore',
+                                style: GoogleFonts.montserrat(
+                                  fontSize: 24,
+                                  letterSpacing: 0,
+                                  fontWeight: FontWeight.w500,
+                                  color: const Color.fromARGB(255, 255, 255, 255),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
                     ),
-                  )),
-              Positioned(
-                  bottom: 250,
-                  child: Container(
-                    padding: const EdgeInsets.only(left: 20),
-                    child: SizedBox(
-                      width: 350,
+                    SizedBox(
+                      width: 250,
                       height: 52,
                       child: ElevatedButton(
-                          onPressed: () {
-                            // FirebaseAuth.instance.signOut();
-                          },
-                          style: ElevatedButton.styleFrom(
-                              backgroundColor: const Color.fromARGB(72, 0, 0, 0),
-                              shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(16))),
-                          child: Text(
-                            'Logout',
-                            style: GoogleFonts.montserrat(
-                                fontSize: 20,
+                        onPressed: () {
+                          // FirebaseAuth.instance.signOut();
+                        },
+                        style: ElevatedButton.styleFrom(
+                          padding: EdgeInsets.zero,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(16),
+                          ),
+                          elevation: 0,
+                          shadowColor: Colors.transparent,
+                        ),
+                        child: Ink(
+                          decoration: BoxDecoration(
+                            gradient: const LinearGradient(
+                              colors: [Color(0xff66B8D9), Color(0xff4E95AF)],
+                            ),
+                            borderRadius: BorderRadius.circular(16),
+                          ),
+                          child: Container(
+                            alignment: Alignment.center,
+                            child: Text(
+                              'Logout',
+                              style: GoogleFonts.montserrat(
+                                fontSize: 24,
                                 letterSpacing: 0,
                                 fontWeight: FontWeight.w500,
-                                color: const Color.fromARGB(255, 255, 255, 255)),
-                          )),
+                                color: const Color.fromARGB(255, 255, 255, 255),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
                     ),
-                  ))
+                  ],
+                ),
+              )
             ],
           ),
         ),
